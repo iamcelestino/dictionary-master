@@ -6,9 +6,44 @@
     <title>Dictionary Master</title>
     <link rel="stylesheet" href="output.css">
 </head>
-<body>
-    <h1 class="text-3xl font-bold">
-        Hello world!
-    </h1>
+<body class="">
+   <header class="container mx-auto pt-2 md:pt-6">
+        <nav class="flex justify-between mb-5">
+            <img src="assets/icons/logotablet.svg" alt="Dictionary logo">
+            <form action="" class="flex">
+                <select class="bg-inherit  mr-2" name="fonts" id="fonts">
+                    <option value="Sans Serif">Sans Serif</option>
+                    <option value="Serif">Serif</option>
+                    <option value="Mono">Mono</option>
+                </select>
+                <div class="border-l-2 p-2 flex justify-between items-center">
+                    <img class="" src="assets/icons/lighttheme.png" alt="">
+                    <img class="ml-2" src="assets/icons/iconoir_half-moon.svg" alt="">
+                </div>
+            </form>
+        </nav>
+        <input class="border w-full rounded-lg p-2" type="search" placeholder="search" name="searchWord" id="searchWord">
+    </header>
+    <main class="container">
+        <section class="flex justify-between items-center mt-4 mb-4">
+            <div>
+                <h1 class="text-2xl  md:text-4xl font-bold">Keyword</h1>
+                <p class="phonetic mt-2 text-purple-400">/ˈkiːwəːd/</p>
+            </div>
+            <div class="bg-fuchsia-300 p-2 rounded-full">
+                <img class="text-center" src="assets/icons/Path 2.png" alt="">
+            </div>
+        </section>
+
+        <section class="word__description">
+            <div>
+                <h5 class="text-gray-400">Meaning</h5>
+                <div>
+                    
+                </div>
+            </div>
+        </section>
+
+    </main>
 </body>
 </html>
