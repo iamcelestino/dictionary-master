@@ -22,15 +22,15 @@
                 </div>
             </form>
         </nav>
-        <form class="getword" action="">
+        <form class="getword">
             <input class="border-2 w-full rounded-lg p-2" type="search" placeholder="search" name="searchWord" id="searchWord">
         </form>
     </header>
     <main class="container">
         <section class="flex justify-between items-center mt-4 mb-4">
             <div>
-                <h1 class="text-4xl font-bold">Keyword</h1>
-                <p class="phonetic mt-2 text-purple-400">/ˈkiːwəːd/</p>
+                <h1 class="word text-4xl font-bold">Keyword</h1>
+                <p class="phonetic mt-2 text-purple-600">/ˈkiːwəːd/</p>
             </div>
             <div class="bg-fuchsia-300 p-2 rounded-full">
                 <img class="text-center" src="assets/icons/Path 2.png" alt="">
@@ -40,47 +40,42 @@
         <section class="word__description">
             <div class="">
                 <h5 class="text-gray-400">Meaning</h5>
-                <article class="mb-4 flex items-center gap-2">
+                <article class="mb-4 items-center gap-2">
                     <div class="bg-purple-800 p-1 inline-block rounded-full"></div>
-                    <p>(etc.) A set of keys used to operate a typewriter, computer etc.</p>
+                   
                 </article>
-                <article class="mb-4 flex items-center gap-2">
-                    <div class="bg-purple-800 p-1 inline-block rounded-full"></div>
-                    <p>A component of many instruments including the piano, organ, and harpsichord consisting of usually black and white keys that cause different tones to be produced when struck.</p>
-                </article>
-                <article class="mb-4 flex items-center gap-2">
-                    <div class="bg-purple-800 p-1 inline-block rounded-full"></div>
-                    <p>A device with keys of a musical keyboard, used to control electronic sound-producing devices which may be built into or separate from the keyboard device.</p>
-                </article>
+        
             </div>
 
-            <div class="flex gap-6 mb-6">
-                <h5 class="text-gray-400">Synonyms</h5>
-                <p class="text-purple-800 font-bold">electronic keyboard</p>
+            <div class="more__description">
+                <div class="flex gap-6 mb-6">
+                    <h5 class="text-gray-400">Synonyms</h5>
+                    <p class="text-purple-800 font-bold">electronic keyboard</p>
+                </div>
+    
+                <div>
+                    <h3 class="partOfSpeech font-bold text-2xl">Verb</h3>
+                    <h5 class="text-gray-400">Meaning</h5>
+                    <article>
+                        <div class="flex items-center gap-2 mt-2">
+                            <div class="bg-purple-800 p-1 inline-block rounded-full"></div>
+                            <p class="">To type on a computer keyboard.</p>
+                        </div>
+                        <p class=" example text-gray-400 mt-2">“Keyboarding is the part of this job I hate the most.”</p>
+                    </article>
+                </div>
             </div>
 
-            <div>
-                <h3 class="font-bold text-2xl">Verb</h3>
-                <h5 class="text-gray-400">Meaning</h5>
-                <article>
-                    <div class="flex items-center gap-2 mt-2">
-                        <div class="bg-purple-800 p-1 inline-block rounded-full"></div>
-                        <p class="">To type on a computer keyboard.</p>
-                    </div>
-                    <p class="text-gray-400 mt-2">“Keyboarding is the part of this job I hate the most.”</p>
-                </article>
-            </div>
         </section>
     </main>
 
-    <footer class="container flex items-center gap-2 text-gray-400">
-        <p class="">source:</p>
+    <footer class="container flex items-center gap-2 text-gray-400 pb-2">
+        <p class="">source</p>
         <p>https://en.wiktionary.org/wiki/keyboard</p>
         <a href="">
             <img src="assets/icons/tabler_external-link.png" alt="">
         </a>
     </footer>
-
 
     <script src="module/app.js"></script>
 </body>
