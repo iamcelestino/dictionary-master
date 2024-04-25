@@ -31,8 +31,6 @@ const updateUi = (word) => {
         paragraph[i].textContent = definitions[i];
         document.querySelector('article').appendChild(paragraph[i]);
     }
-
-   console.log(word[0].meanings[0].synonyms[0]);
     
     document.querySelector('.word').textContent = word[0].word;
     document.querySelector('.phonetic').textContent = word[0].phonetic;
@@ -56,7 +54,6 @@ const updateUi = (word) => {
     </div>
     `
     MoreDescription.innerHTML = html;
-
 }
 
 const getWord = (event) => {
@@ -67,3 +64,17 @@ const getWord = (event) => {
 }
 
 getWordForm.addEventListener('submit', getWord);
+
+const changeFont = (event) => {
+    if (event.target.value == "Sans Serif") {
+        document.body.style.fontFamily = 'Sans Serif';
+    }
+    else if (event.target.value == "Serif") {
+        document.body.style.fontFamily = 'Serif';
+    }
+    else if(event.target.value == "Mono"){
+        document.body.style.fontFamily = 'Courier New';
+    }
+}
+document.querySelector('select').addEventListener('change', changeFont);
+
